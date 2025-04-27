@@ -22,10 +22,10 @@ const useRestAPI = (url:string) => {
             });
             return response;
         },
-        patch: async ({params, body, headers}) => {
+        patch: async ({body, headers}) => {
             const response = await axios({
                 method:"patch",
-                url:`${BASE_URL}${url}${params ? "?" + new URLSearchParams(params).toString() : ""}`,
+                url: BASE_URL + url,
                 data:body,
                 headers:headers
             });
