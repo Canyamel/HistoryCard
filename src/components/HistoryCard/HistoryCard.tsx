@@ -38,7 +38,7 @@ export default function HistoryCard() {
                     </a>
                 )}
             </Card>
-        ),
+        )
     }));
 
     const modalTitle = (
